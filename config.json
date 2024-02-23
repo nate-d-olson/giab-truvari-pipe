@@ -1,0 +1,44 @@
+{
+    "ref": "ref/GCA_000001405.15_GRCh38_no_alt_analysis_set.fasta.gz",
+    "base_vcf": "GRCh38_HG2-T2TQ100-V1.0_stvar_dipcall-z2k.vcf.gz",
+    "base_bed": "GRCh38_HG2-T2TQ100-V1.0_stvar_dipcall-z2k.benchmark.bed",
+    "strats_tsv": "stratifications/GRCh38@all/sv-subset.tsv",
+    "samples": {
+        "cuteSV": {
+            "name": "cuteSV",
+            "input_vcf": "1000g-ont-sv-vcfs/20231204_FIRST_100_PASS_chr_len50_cutesv_concatenated_sorted.vcf.gz",
+            "use_region_bed": false,
+            "refine": false
+        },
+        "sniffles2": {
+            "name": "sniffles2",
+            "input_vcf": "1000g-ont-sv-vcfs/20231204_FIRST_100_PASS_chr_len50_sniffles2_concatenated_sorted.vcf.gz",
+	        "use_region_bed": false,
+            "refine": false
+        },
+        "hapdiff_R9_phased": {
+            "name": "hapdiff_R9_phased",
+            "input_vcf": "1000g-ont-sv-vcfs/NA24385.LSK110.R9_hapdiff_phased.vcf.gz",
+	        "use_region_bed": false,
+            "refine": true
+        },
+        "sniffles_R9": {
+            "name": "sniffles_R9",
+            "input_vcf": "1000g-ont-sv-vcfs/NA24385.LSK110.R9_sniffles.vcf.gz",
+	        "use_region_bed": false,
+            "refine": false
+        },
+        "cuteSV_R9-dorado_unphased": {
+            "name": "cuteSV_R9-dorado_unphased",
+            "input_vcf": "1000g-ont-sv-vcfs/NA24385_R9_ds.LSK110.R9.dorado050.sup.5mCG-v3_3.all.sv_cutesv.notPhased.vcf.gz",
+	        "use_region_bed": false,
+            "refine": false
+        },
+        "sniffles2_R9-dorado_unphased": {
+            "name": "sniffles2_R9-dorado_unphased",
+            "input_vcf": "1000g-ont-sv-vcfs/NA24385_R9_ds.LSK110.R9.dorado050.sup.5mCG-v3_3.all.sv_sniffles2.notPhased.vcf.gz",
+	        "use_region_bed": false,
+            "refine": false
+        }      
+    }
+}
